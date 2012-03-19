@@ -1,0 +1,12 @@
+Arda C. Tugay
+Steven Moyes
+
+Question 1: Mocking creates a fake database object. First, we create a mock, then specify the object that is being mocked (which is the database object). After this, we record the expectations with the LastCall class. Because we know what the mocked class is supposed to return, we use an Assert to determine if the hotel object interacted correctly with the mocked database.
+
+Question 2: We can use the built-in Throw method to throw an exception.
+
+Question 3: You should not use a stub if no value is being returned by the mocked object. Instead, you should use a DynamicMock.
+
+Question 4: First, we create a mock, then we create a list with the available rules. Then, we populate the mocked object's Rooms field. We create a new Hotel object and assign the mocked database to its database field. Finally, we Assert the room count of the hotel object to the room count of the temperoray Rooms list we created.
+
+Question 5: Reflection is a way to test methods and classes that are not necessarily initialized when the program is run. ServiceLocator is initialized and its methods are accessed using reflection. When a user (Bob) books a car, if the booking is of the type car, then the ServiceLocator removes that instance of car from the inventory.
